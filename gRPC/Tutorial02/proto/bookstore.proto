@@ -1,0 +1,30 @@
+// 사용되는 protocol buffer의 버전
+syntax = "proto3";
+
+// 추후 사용될 패키지 명
+package bookstore;
+
+// 실행될 서비스 wjddml
+service Bookstore {
+    // 호출될 함수: rpc 키워드로 시작
+    rpc GetBook (GetBookRequest) returns (GetBookResponse) {};
+}
+    
+// 아규먼트
+message GetBookRequest {
+    // 데이터형과 위치
+    // 0~15 1 byte
+    // 16~2047 2 byte
+    string id = 1;
+}
+
+// 리턴값
+message GetBookResponse {
+    // 데이터형과 위치
+    string id = 1;
+    string name = 2;
+    string author = 3;
+    int32 year = 4;
+}
+
+// Protocol Buffer 공식 문서: https://developers.google.com/protocol-buffers/docs/proto
