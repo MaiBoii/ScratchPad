@@ -1,5 +1,5 @@
 # Rust Argument 처리 예제
-* 2022.4.08 박찬열 작성
+* 2022.4.08 chan10 작성
 * `Cargo.toml` - clap 사용
 ```toml
 [dependencies]
