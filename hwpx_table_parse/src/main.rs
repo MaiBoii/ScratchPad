@@ -14,9 +14,10 @@ fn main() -> io::Result<()> {
     println!("전체 표 개수 = {}", x.num_of_tables());
 
     let table_index = 0;
+    let table = x.get_table(table_index);
+    
     let row = 3;
     let col = 0;
-    let table = x.get_table(table_index);
     println!(
         "{:?} 크기 {}번째 표 중 셀 ({}, {}) = {:?}",
         table.unwrap().get_size(),
@@ -28,7 +29,6 @@ fn main() -> io::Result<()> {
 
     let row = 2;
     let col = 0;
-    let table = x.get_table(table_index);
     println!(
         "{:?} 크기 {}번째 표 중 셀 ({}, {}) = {:?}",
         table.unwrap().get_size(),
@@ -40,7 +40,6 @@ fn main() -> io::Result<()> {
 
     let row = 2;
     let col = 1;
-    let table = x.get_table(table_index);
     println!(
         "{:?} 크기 {}번째 표 중 셀 ({}, {}) = {:?}",
         table.unwrap().get_size(),
@@ -52,7 +51,6 @@ fn main() -> io::Result<()> {
 
     let row = 4;
     let col = 1;
-    let table = x.get_table(table_index);
     println!(
         "{:?} 크기 {}번째 표 중 셀 ({}, {}) = {:?}",
         table.unwrap().get_size(),
@@ -64,7 +62,6 @@ fn main() -> io::Result<()> {
 
     let row = 4;
     let col = 3;
-    let table = x.get_table(table_index);
     println!(
         "{:?} 크기 {}번째 표 중 셀 ({}, {}) = {:?}",
         table.unwrap().get_size(),
@@ -76,7 +73,6 @@ fn main() -> io::Result<()> {
 
     let row = 6;
     let col = 4;
-    let table = x.get_table(table_index);
     println!(
         "{:?} 크기 {}번째 표 중 셀 ({}, {}) = {:?}",
         table.unwrap().get_size(),
@@ -88,7 +84,6 @@ fn main() -> io::Result<()> {
 
     let row = 7;
     let col = 4;
-    let table = x.get_table(table_index);
     println!(
         "{:?} 크기 {}번째 표 중 셀 ({}, {}) = {:?}",
         table.unwrap().get_size(),
@@ -100,7 +95,6 @@ fn main() -> io::Result<()> {
 
     let row = 9;
     let col = 5;
-    let table = x.get_table(table_index);
     println!(
         "{:?} 크기 {}번째 표 중 셀 ({}, {}) = {:?}",
         table.unwrap().get_size(),
@@ -112,7 +106,6 @@ fn main() -> io::Result<()> {
 
     let row = 10;
     let col = 6;
-    let table = x.get_table(table_index);
     println!(
         "{:?} 크기 {}번째 표 중 셀 ({}, {}) = {:?}",
         table.unwrap().get_size(),
@@ -123,9 +116,10 @@ fn main() -> io::Result<()> {
     );
 
     let table_index = 1;
+    let table = x.get_table(table_index);
+    
     let row = 1;
     let col = 2;
-    let table = x.get_table(table_index);
     println!(
         "{:?} 크기 {}번째 표 중 셀 ({}, {}) = {:?}",
         table.unwrap().get_size(),
