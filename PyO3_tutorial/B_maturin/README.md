@@ -26,7 +26,7 @@ name = "rust"
 crate-type = ["cdylib"]
 ```
 
-### multiply.py 파일에서
+### `multiply.py` 파일에서
 ```python
 import rust
 rust.multiply(2, 3)
